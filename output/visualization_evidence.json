@@ -1,0 +1,40 @@
+{
+  "critique": [
+    {
+      "category": "unsupported claim",
+      "problem": "The title states that the plot shows a causal relationship, when it cannot show causality.",
+      "repair": "Number of attended sessions for center and home based programs during Q1 and Q2"
+    },
+    {
+      "category": "truncated baseline",
+      "problem": "The y-axis starts at 76 instead of 0, which can exaggerate differences in the data.",
+      "repair": "Start the y-axis at 0."
+    },
+    {
+      "category": "missing unit",
+      "problem": "The y-axis label does not tell us what Q1 or Q2 represents.",
+      "repair": "Include the unit of Q1 and Q2 in the y-axis label."
+    },
+    {
+      "category": "color-only encoding",
+      "problem": "The two programs are differentiated by color, which could be unhelpful to someone that is colorblind.",
+      "repair": "Use differentiated textures to show differences in program."
+    },
+    {
+      "category": "distracting decoration",
+      "problem": "The textures of each program are not different for each category, therefore are unhelpful.",
+      "repair": "Change the texture of one of the categories so that someone who cannot see color can differentiate."
+    }
+  ],
+  "question": "Out of the visits recorded, how many of the weekly follow up exercises goals were met?",
+  "audience": "This chart is meant for the rehab program coordinator in order to decide where to add follow up support.",
+  "intended_claim": "Attendance percentage is very similar in both clinic and home-based programs, across both quarters",
+  "y_measure": "The y axis shows the percentage (%) of weekly follow ups met.",
+  "grain": "Each row represents one program per quarterly visit, with the number of patients seen that quarter and the percentage of patients that were successfully followed up with.",
+  "data_types": {
+    "program": "categorical",
+    "visit_number": "ordinal",
+    "goal_met_pct": "quantitative"
+  },
+  "text_alternative": "This is a line chart, with each quarter of visits on the x-axis and the percentage of follow ups met on the y-axis. There are two lines, one for the Home-based program and one for the Center-based program. This line chart shows that home-based follow up rate is lower than the center-based follow up rate, with the largest gap between the two being at the final quarter [70% for home-based vs 79% for center-based]. A limitation for this chart is that the patients were able to freely choose their program so the groups may be skewed due to possible confounders."
+}
